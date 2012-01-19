@@ -1,6 +1,6 @@
 ﻿Introduction
 ============
-Dragon is a simplified ORM framework. It has similar syntax to Matrix.Data.Database, but map to static types, not dynamic. E.g.
+Dragon is a simplified ORM tool. It has similar syntax to Matrix.Data.Database, but maps to static types not dynamic. E.g.
 
 ```C#
 Database database = Database.Open("Users");
@@ -14,10 +14,10 @@ Database Methods
 ================
 The Database Class has methods Open, Execute QueryValue and Query.
 
-* Open, opens database connection, the parameter is the connect string, or the connection name in app.config file or the registry path to a connection string
-* Execute, creates a command and run ExecuteNonQuery
-* QueryValue, creates a command and run ExecuteScalar
-* Query, creates a command with SQL statements or stored procedure name, creates objects. Query method supports up to 3 multiple record sets, the result objects are create in a Tuple, E.g.
+* Open, opens database connection, the parameter can be a connection string, or a connection string name in app.config file or a registry path to a connection string.
+* Execute, creates a command and runs ExecuteNonQuery.
+* QueryValue, creates a command and runs ExecuteScalar.
+* Query, creates a command with SQL statement(s) or stored procedure name and creates objects. The Query method supports up to 3 multiple record sets. The result objects are returned in a Tuple, E.g.
 
 ```C#
 Database database = Database.Open("Users");
